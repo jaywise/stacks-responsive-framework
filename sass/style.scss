@@ -1,0 +1,334 @@
+
+// @import "file-management/variables";
+// @import "file-management/mixins";
+// @import "file-management/functions";
+// @import "file-management/mobile";
+// @import "file-management/mixins";
+
+@import url('https://fonts.googleapis.com/css?family=David+Libre|Federo|Days+One|ZCOOL+QingKe+HuangYou');
+
+//assignment: variables; assignment: complementary colors;
+$text-color-primary: hsla(111, 30%, 21%, 1);
+$text-color-secondary: hsla(30, 96%, 52%, 1.0);
+$background-color-primary: #eaeaea;
+$accent-color: hsla(30, 96%, 52%, 1.0);
+$button-color: grey;
+
+$primary-font: 'Days One', Arial;
+$secondary-font: 'ZCOOL QingKe HuangYou', sans-serif;
+$accent-font: 'Federo', sans-serif;
+$body-font: 'David Libre', cursive;
+
+//breakpoints
+$breakpoint-md: 768px;
+$breakpoint-sm: 420px;
+
+/*type-scale for root (desktop)
+sets default (ie root), but can be overridden for mobile if fontScale is modified */
+:root {
+  --fontBaseSize: 20px;
+  --fontScale: 1.25;
+}
+
+
+
+/* modular scaling based upon unit of fontScale variable*/
+.p-scale{
+  font-size: var(--fontBaseSize);
+}
+.h5-scale {
+  font-size: calc(var(--fontBaseSize) * var(--fontScale));
+}
+.h4-scale {
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale));
+}         
+.h3-scale {
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale));
+}
+.h2-scale {
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale));
+}
+.h1-scale {
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale));
+}
+
+//adjusts base for all font scale classes
+@media only screen and (max-width: $breakpoint-md){
+    [class*="scale"] {
+      --fontBaseSize: 16px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-sm){
+    [class*="scale"] {
+      --fontBaseSize: 14px;
+  }
+}
+
+// /*image credit: https://www.flickr.com/photos/usedfree/16512474046/in/photolist-ra9Kfo-84E1ng-2frDAM-37skj4-3x9Ro3-7L4UdD-S9tify-aRbmcz-nkxpb-DuhWt-2fJ89H-84E1kF-6drMP5-bDCEaF-5BrqHc-fA89PX-8s1yq7-6GqDsV-9XZwvY-8s1ytm-2kK8QR-6j6pfd-8TwRcG-8rXv1R-dLUquP-8MgNzX-rZvKG-aqn7Ay-6mgN8n-3r2qDm-cfqXg9-5TWfaj-93qwyZ-8s1ybL-fDZD3A-mSmH5-8s1yeE-dojsZh-8s1y4q-BCQYrL-btk3H-275HB-nUMB19-aMZgMz-Sowco-dwxSem-t1e9rD-2frG8F-A8FYC-kwiJRF */
+// body{
+//     background-image: url(../img/treesblackandwhite.jpg);
+//     margin: 0 auto;
+//     padding: 0;
+//     max-width: var(--bodyMaxWidth, 80em); //assignment 2: custom vaiable declared that is modified in media query
+//     padding: var(--bodyPadding, 1em) 0; //assignment 2: custom vaiable declared that is modified in media query
+//     --textPadding: 30px; //assignment 2: global variable to be re-calculated upon media query
+//     --imagePadding: 5px; //assignment 2: global variable to be re-calculated upon media query
+// }
+
+//container classes
+.container{
+  width: 100%;
+  padding: 0.5em;
+  border: solid red 4px;
+}
+
+.flex-area{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0.5em;
+  border: solid blue 4px;
+}
+
+:root {
+  --fullWidth: 100%;
+}
+
+.spread-6{
+  width: var(--fullWidth);
+}
+
+.spread-5{
+  width: calc(var(--fullWidth)*(5/6));
+}
+
+.spread-4{
+  width: calc(var(--fullWidth)*(4/6));
+}
+
+.spread-3{
+  width: calc(var(--fullWidth)*(3/6));
+}
+
+.spread-2{
+  width: calc(var(--fullWidth)*(2/6));
+}
+
+.spread-1{
+  width: calc(var(--fullWidth)*(1/6));
+}
+
+//responsive flex areas
+.expand-sm{
+  @media only screen and (max-width: $breakpoint-sm) {
+      width: 100%;
+  }
+}
+
+.expand-md{
+  @media only screen and (max-width: $breakpoint-md) {
+      width: 100%;
+  }
+}
+
+
+
+//above and beyond -- expands all based on container
+.expand-all-children-sm{
+    @media only screen and (max-width: $breakpoint-sm) {
+      div[class^="spread-"], div[class*=" spread-"] {
+        width: 100%;
+      }
+  }
+}
+
+.expand-all-children-md{
+    @media only screen and (max-width: $breakpoint-md) {
+      div[class^="spread-"], div[class*=" spread-"] {
+        width: 100%;
+      }
+  }
+}
+
+.red-fill{
+  background-color: red;
+}
+
+.blue-fill{
+  background-color: blue;
+}
+
+//alignment classes
+.center-text{
+  text-align: center;
+}
+
+
+
+
+// header,
+// picture,
+// aside,
+// article,
+// nav,
+// footer {
+//   background: approach-half-neutral($background-color-primary); 
+//   padding: 1em;
+//   border-radius: 0.2em;
+// }
+
+// nav{
+//   background-color: hsla(200, 19%, 85%, 1.0);
+//   padding: 0;
+// } 
+
+// header, nav, footer, picture {
+//   grid-column: 1 / 4;
+// }
+
+// a {
+//   text-decoration: none;
+//   &.selected-link{
+//     color: approach-half-neutral($accent-color);
+//   }
+// }
+
+// /*styles for main page and sub-pages*/
+// .grid-landing-page {
+//   @include grid-setup;
+//   grid-template-columns: 150px auto 150px;
+//   grid-template-rows: 100px 60px auto 200px 50px;
+// }
+
+// .grid-sub-page {  
+//   @include grid-setup;
+//   grid-template-columns: auto 150px;
+//   grid-template-rows: 100px 50px 300px 50px;
+//   picture{
+//       grid-column: 1 / 2;
+//   }
+//   article{
+//     flex-direction: column;
+//   }
+//   article.grid-text {
+//       h3{
+//         font-family: $accent-font;
+//         color: approach-half-neutral($accent-color);
+//       }
+//       grid-column: 2 / 4;
+//   }
+// }
+
+// %grid-sub-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// header {
+//   @extend %grid-sub-container;
+//   h3 a {
+//     display:flex;
+//     color: $text-color-primary;
+//     font-family: $primary-font;
+//   }
+// }
+
+// .grid-text {
+//   @extend %grid-sub-container;
+//   p{
+//     color: $text-color-primary;
+//     font-family: $body-font;
+//   }
+//   padding: var(--textPadding, 30px);
+// }
+
+// picture {
+//   @extend %grid-sub-container;
+//   flex-flow: row wrap;
+//   &.img-large img{
+//     max-width:100%;
+//     height: 230px;
+//     padding: var(--imagePadding, 10px);
+//   }
+// }
+
+// .nav-text { 
+//   @extend %grid-sub-container;
+//   justify-content: space-between;
+//   list-style-type: none;
+//   padding: 0px 80px 15px 80px;
+// }
+
+// .nav-text a {   
+//   padding-right: 30px;
+//   font-family: $secondary-font;
+//   font-size: 26px;
+//   background-color: approach-half-neutral($button-color);
+//   padding: 5px;
+//   border-radius:5px;
+//     &:link{
+//       color: approach-half-neutral($background-color-primary);
+//     }
+//     &:hover{
+//       color: approach-half-neutral($accent-color);
+//     }
+//     &:visited{
+//       color: approach-half-neutral($background-color-primary);
+//     }
+// }
+
+// footer p {
+//   font-family: $accent-font;
+// }
+
+
+// //mobile
+// @media screen and (max-width: 680px){   //assignment 2: medoia query by type, "screen"
+
+//   /* sets scales and padding for mobile; calcultions occur in class declaration*/
+//   body{
+//     --mobileScaleIndex: 0.5; //assignment 2: sets local scale for padding;
+//     --fontBaseSize: 16px; // assignment 2: sets base of scaling font sizes for mobile
+//     --bodyMaxWidth: 40em; //assignment 2: media query with custom variable
+//     --bodyPadding: 0em;  //assignment 2: media query with custom variable
+//   }
+
+//   .grid-landing-page{
+//     @include grid-setup(.5em);
+//     grid-template-columns: 0px auto;
+//     grid-template-rows: 100px 40px auto 200px 0px;
+//     picture.img-large img{
+//       padding: calc(var(--imagePadding) * var(--mobileScaleIndex)); //assignment 2: recalculate based on local mobile scaling index
+//       width: auto;
+//     }
+//   }
+
+//   .grid-sub-page{
+//     @include grid-setup(.5em);
+//     grid-template-columns: 0 auto;
+//     grid-template-rows: 100px 40px 300px 50px;
+//     .grid-text {
+//       padding: calc(var(--textPadding) * var(--mobileScaleIndex)); //assignment 2: recalculate based on local mobile scaling index
+//     }
+//   }
+//   .nav-text {
+//     padding: 5px;
+//     margin: 5px;
+//     a {
+//       font-size: 22px;
+//     }
+//   }
+
+//   /* if mobile is long enough, style the footer to be detached */
+//   @media screen and (min-height: 500px){
+//     .grid-landing-page footer {
+//       margin: 30px;
+//     }
+//   }
+
+// }
+
+
+
+

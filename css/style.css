@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=David+Libre|Federo|Days+One|ZCOOL+QingKe+HuangYou");
+/*type-scale for root (desktop)
+sets default (ie root), but can be overridden for mobile if fontScale is modified */
+:root {
+  --fontBaseSize: 20px;
+  --fontScale: 1.25; }
+
+/* modular scaling based upon unit of fontScale variable*/
+.p-scale {
+  font-size: var(--fontBaseSize); }
+
+.h5-scale {
+  font-size: calc(var(--fontBaseSize) * var(--fontScale)); }
+
+.h4-scale {
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale)); }
+
+.h3-scale {
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale)); }
+
+.h2-scale {
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale)); }
+
+.h1-scale {
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale)); }
+
+@media only screen and (max-width: 768px) {
+  [class*="scale"] {
+    --fontBaseSize: 16px; } }
+
+@media only screen and (max-width: 420px) {
+  [class*="scale"] {
+    --fontBaseSize: 14px; } }
+
+.container {
+  width: 100%;
+  padding: 0.5em;
+  border: solid red 4px; }
+
+.flex-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding: 0.5em;
+  border: solid blue 4px; }
+
+:root {
+  --fullWidth: 100%; }
+
+.spread-6 {
+  width: var(--fullWidth); }
+
+.spread-5 {
+  width: calc(var(--fullWidth)*(5/6)); }
+
+.spread-4 {
+  width: calc(var(--fullWidth)*(4/6)); }
+
+.spread-3 {
+  width: calc(var(--fullWidth)*(3/6)); }
+
+.spread-2 {
+  width: calc(var(--fullWidth)*(2/6)); }
+
+.spread-1 {
+  width: calc(var(--fullWidth)*(1/6)); }
+
+@media only screen and (max-width: 420px) {
+  .expand-sm {
+    width: 100%; } }
+
+@media only screen and (max-width: 768px) {
+  .expand-md {
+    width: 100%; } }
+
+@media only screen and (max-width: 420px) {
+  .expand-all-children-sm div[class^="spread-"], .expand-all-children-sm div[class*=" spread-"] {
+    width: 100%; } }
+
+@media only screen and (max-width: 768px) {
+  .expand-all-children-md div[class^="spread-"], .expand-all-children-md div[class*=" spread-"] {
+    width: 100%; } }
+
+.red-fill {
+  background-color: red; }
+
+.blue-fill {
+  background-color: blue; }
+
+.center-text {
+  text-align: center; }
