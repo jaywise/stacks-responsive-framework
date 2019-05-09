@@ -11,8 +11,10 @@
 $text-color-primary: hsla(111, 30%, 21%, 1);
 $text-color-secondary: hsla(30, 96%, 52%, 1.0);
 $background-color-primary: #eaeaea;
+$background-color-secondary: lightblue;
 $accent-color: hsla(30, 96%, 52%, 1.0);
-$button-color: grey;
+$button-color: orange;
+$alert-color: red;
 
 $primary-font: 'Days One', Arial;
 $secondary-font: 'ZCOOL QingKe HuangYou', sans-serif;
@@ -20,8 +22,25 @@ $accent-font: 'Federo', sans-serif;
 $body-font: 'David Libre', cursive;
 
 //breakpoints
-$breakpoint-md: 768px;
 $breakpoint-sm: 420px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1400px;
+
+//padding and margins -- refactor with mixin
+$padding-sm: 5px;
+$padding-md: 10px;
+$padding-lg: 20px;
+
+//button variables
+$button-height: 60px;
+$button-width: 200px;
+
+//re-sizing text variables
+$sm-proportion: 0.7;
+$med-proportion: 0.85;
+$lg-proportion: 1;
+$xl-proportion: 1.15;
 
 /*type-scale for root (desktop)
 sets default (ie root), but can be overridden for mobile if fontScale is modified */
@@ -162,6 +181,55 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 .center-text{
   text-align: center;
 }
+
+//button styling
+
+%button{
+  max-width: $button-width;
+  height: $button-height;
+  border-radius: 15px;
+  font-family: $body-font;
+  font-size: var(--fontBaseSize);
+  // @media only screen and (max-width: $breakpoint-sm){
+  //   height: calc($button-height * $sm-proportion);
+  //   font-size: calc(var(--fontBaseSize) * $sm-proportion);
+  // }
+  // @media only screen and (max-width: $breakpoint-md){
+  //     height: calc($button-height * .4);
+  //     font-size: calc(var(--fontBaseSize) * $md-proportion);
+  // }
+  // @media only screen and (max-width: $breakpoint-lg){
+  //     height: calc($button-height * $lg-proportion);
+  //     font-size: calc(var(--fontBaseSize) * $lg-proportion);
+  // }
+  // @media only screen and (max-width: $breakpoint-xl){
+  //     height: calc($button-height * $xl-proportion);
+  //     font-size: calc(var(--fontBaseSize) * $xl-proportion);
+  // }
+}
+  
+.button-default{
+  @extend %button;
+  background-color: $button-color;
+}
+
+.button-secondary{
+  @extend %button;
+  background-color: $background-color-secondary;
+}
+
+.button-danger{
+  @extend %button;
+  background-color: $alert-color;
+}
+
+.img{
+  max-width: 100%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 2px 5px #888888;
+}
+
 
 
 

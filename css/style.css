@@ -93,3 +93,26 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 
 .center-text {
   text-align: center; }
+
+.button-default, .button-secondary, .button-danger {
+  max-width: 200px;
+  height: 60px;
+  border-radius: 15px;
+  font-family: "David Libre", cursive;
+  font-size: var(--fontBaseSize); }
+
+.button-default {
+  background-color: orange; }
+
+.button-secondary {
+  background-color: lightblue; }
+
+.button-danger {
+  background-color: red; }
+
+.img {
+  max-width: 100%;
+  border: 1px solid;
+  padding: 10px;
+  -webkit-box-shadow: 2px 5px #888888;
+  box-shadow: 2px 5px #888888; }
