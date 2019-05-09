@@ -97,7 +97,7 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 .button-default, .button-secondary, .button-danger {
   max-width: 200px;
   height: 60px;
-  border-radius: 15px;
+  border-radius: 2px;
   font-family: "David Libre", cursive;
   font-size: var(--fontBaseSize); }
 
@@ -111,8 +111,21 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   background-color: red; }
 
 .img {
-  max-width: 100%;
-  border: 1px solid;
+  max-width: 500px;
+  border: 1px solid #bdbdbd;
   padding: 10px;
-  -webkit-box-shadow: 2px 5px #888888;
-  box-shadow: 2px 5px #888888; }
+  margin: 10px;
+  -webkit-box-shadow: 5px 5px #dbdbdb;
+  box-shadow: 5px 5px #dbdbdb;
+  border-radius: 2px; }
+
+.header {
+  text-decoration: underline;
+  color: grey;
+  font-family: "Days One", Arial; }
+
+.hero {
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  padding: 0; }

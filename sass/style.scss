@@ -20,6 +20,8 @@ $primary-font: 'Days One', Arial;
 $secondary-font: 'ZCOOL QingKe HuangYou', sans-serif;
 $accent-font: 'Federo', sans-serif;
 $body-font: 'David Libre', cursive;
+$title-color: grey;
+$body-color: black;
 
 //breakpoints
 $breakpoint-sm: 420px;
@@ -41,6 +43,9 @@ $sm-proportion: 0.7;
 $med-proportion: 0.85;
 $lg-proportion: 1;
 $xl-proportion: 1.15;
+
+//border styling
+$border-radius: 2px;
 
 /*type-scale for root (desktop)
 sets default (ie root), but can be overridden for mobile if fontScale is modified */
@@ -187,7 +192,7 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 %button{
   max-width: $button-width;
   height: $button-height;
-  border-radius: 15px;
+  border-radius: $border-radius;
   font-family: $body-font;
   font-size: var(--fontBaseSize);
   // @media only screen and (max-width: $breakpoint-sm){
@@ -223,12 +228,32 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   background-color: $alert-color;
 }
 
+//image styling
 .img{
-  max-width: 100%;
-  border: 1px solid;
+  max-width: 500px;
+  border: 1px solid #bdbdbd;
   padding: 10px;
-  box-shadow: 2px 5px #888888;
+  margin: 10px;
+  box-shadow: 5px 5px #dbdbdb;
+  border-radius: $border-radius;
 }
+
+//text styling
+.header{
+  text-decoration: underline;
+  color: $title-color;
+  font-family: $primary-font;
+}
+
+.hero{
+  width:100%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 
 
 
