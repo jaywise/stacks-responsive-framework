@@ -34,8 +34,7 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 
 .container {
   width: 100%;
-  padding: 10px;
-  border: solid red 4px; }
+  padding: 0; }
 
 .flex-area {
   display: -webkit-box;
@@ -45,8 +44,7 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  padding: 10px;
-  border: solid blue 4px; }
+  padding: 5px; }
 
 :root {
   --fullWidth: 93%; }
@@ -77,6 +75,9 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   .expand-all-children-md [class^="spread-"], .expand-all-children-md [class*=" spread-"] {
     width: 100%; } }
 
+.lightblue-fill {
+  background-color: lightblue; }
+
 .red-fill {
   background-color: red; }
 
@@ -97,7 +98,7 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 .button-default, .button-secondary, .button-danger {
   max-width: 200px;
   height: 60px;
-  border-radius: 2px;
+  border-radius: 4px;
   font-family: "David Libre", cursive;
   font-size: var(--fontBaseSize); }
 
@@ -116,7 +117,7 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   margin: 8px;
   -webkit-box-shadow: 5px 5px #dbdbdb;
   box-shadow: 5px 5px #dbdbdb;
-  border-radius: 2px;
+  border-radius: 4px;
   height: 100%; }
 
 .img-full {
@@ -147,3 +148,41 @@ hr.divider-vertical {
   width: 0px;
   height: 95%;
   opacity: .5; }
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 10px;
+  background-color: lightblue; }
+
+.nav a {
+  padding-right: 30px;
+  font-family: "ZCOOL QingKe HuangYou", sans-serif;
+  font-size: 26px;
+  padding: 5px;
+  border-radius: 5px; }
+  .nav a:link {
+    color: #eaeaea; }
+  .nav a:hover {
+    text-decoration: underline; }
+  .nav a:visited {
+    color: #eaeaea; }
+
+@media screen and (max-width: 420px) {
+  .nav {
+    padding: 5px;
+    margin: 5px; }
+    .nav a {
+      font-size: 22px; } }

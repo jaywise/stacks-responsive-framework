@@ -49,7 +49,7 @@ $lg-proportion: 1;
 $xl-proportion: 1.15;
 
 //border styling
-$border-radius: 2px;
+$border-radius: 4px;
 
 /*type-scale for root (desktop)
 sets default (ie root), but can be overridden for mobile if fontScale is modified */
@@ -107,15 +107,15 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 //container classes
 .container{
   width: 100%;
-  padding: $padding-md;
-  border: solid red 4px;
+  padding: 0;
+  // border: solid red 4px;
 }
 
 .flex-area{
   display: flex;
   flex-flow: row wrap;
-  padding: $padding-md;
-  border: solid blue 4px;
+  padding: $padding-sm;
+  // border: solid blue 4px;
 }
 
 :root {
@@ -176,6 +176,10 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
         width: 100%;
       }
   }
+}
+
+.lightblue-fill{
+  background-color: lightblue;
 }
 
 .red-fill{
@@ -298,6 +302,46 @@ hr.divider-vertical{
 // }
 
 
+
+.nav { 
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: $padding-md;
+  background-color: $background-color-secondary;
+  // border: 1px solid $text-color-primary;
+  // border-radius: $border-radius;
+}
+
+.nav a {   
+  padding-right: 30px;
+  font-family: $secondary-font;
+  font-size: 26px;
+  padding: $padding-sm;
+  border-radius:5px;
+    &:link{
+      color: $background-color-primary;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+    &:visited{
+      color: $background-color-primary;
+    }
+}
+
+@media screen and (max-width: $breakpoint-sm){   //assignment 2: medoia query by type, "screen"
+  .nav {
+    padding: 5px;
+    margin: 5px;
+    a {
+      font-size: 22px;
+    }
+  }
+}
 
 
 
