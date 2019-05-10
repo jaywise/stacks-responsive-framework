@@ -83,8 +83,16 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 .blue-fill {
   background-color: blue; }
 
-.center-text {
-  text-align: center; }
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .button-default, .button-secondary, .button-danger {
   max-width: 200px;
@@ -134,22 +142,8 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   margin: 8px;
   font-family: "David Libre", cursive; }
 
-.hero {
-  width: 100%;
-  position: absolute;
-  margin: 0;
-  padding: 0; }
-
 hr.divider-vertical {
   float: left;
   width: 0px;
-  height: 100%;
+  height: 95%;
   opacity: .5; }
-
-hr.divider-horizontal {
-  border: 0;
-  height: 1px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
