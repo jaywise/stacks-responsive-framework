@@ -157,7 +157,7 @@ hr.divider-vertical {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 98%;
+  width: 99%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -176,7 +176,8 @@ hr.divider-vertical {
   font-family: "ZCOOL QingKe HuangYou", sans-serif;
   font-size: 26px;
   padding: 5px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  color: grey; }
   .nav a:link {
     color: #eaeaea; }
   .nav a:hover {
@@ -190,3 +191,13 @@ hr.divider-vertical {
     margin: 5px; }
     .nav a {
       font-size: 22px; } }
+
+.footer {
+  width: 100%;
+  background-color: lightblue;
+  border: 1px solid lightblue;
+  border-radius: 4px; }
+  .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer p {
+    font-family: "David Libre", cursive;
+    padding: 5px;
+    text-align: center; }
