@@ -34,6 +34,10 @@ $padding-sm: 5px;
 $padding-md: 10px;
 $padding-lg: 20px;
 
+$margin-sm: 2px;
+$margin-md: 8px;
+$margin-lg: 15px;
+
 //button variables
 $button-height: 60px;
 $button-width: 200px;
@@ -103,14 +107,14 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 //container classes
 .container{
   width: 100%;
-  padding: 0.5em;
+  padding: $padding-md;
   border: solid red 4px;
 }
 
 .flex-area{
   display: flex;
   flex-flow: row wrap;
-  padding: 0.5em;
+  padding: $padding-md;
   border: solid blue 4px;
 }
 
@@ -142,25 +146,25 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   width: calc(var(--fullWidth)*(1/6));
 }
 
-//responsive flex areas
-.expand-sm{
-  @media only screen and (max-width: $breakpoint-sm) {
-      width: 100%;
-  }
-}
+// //responsive flex areas
+// .expand-sm{
+//   @media only screen and (max-width: $breakpoint-sm) {
+//       width: 100%;
+//   }
+// }
 
-.expand-md{
-  @media only screen and (max-width: $breakpoint-md) {
-      width: 100%;
-  }
-}
+// .expand-md{
+//   @media only screen and (max-width: $breakpoint-md) {
+//       width: 100%;
+//   }
+// }
 
 
 
 //above and beyond -- expands all based on container
 .expand-all-children-sm{
     @media only screen and (max-width: $breakpoint-sm) {
-      div[class^="spread-"], div[class*=" spread-"] {
+      [class^="spread-"], [class*=" spread-"] {
         width: 100%;
       }
   }
@@ -168,7 +172,7 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 
 .expand-all-children-md{
     @media only screen and (max-width: $breakpoint-md) {
-      div[class^="spread-"], div[class*=" spread-"] {
+      [class^="spread-"], [class*=" spread-"] {
         width: 100%;
       }
   }
@@ -232,21 +236,30 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 .img{
   max-width: 500px;
   border: 1px solid #bdbdbd;
-  padding: 10px;
-  margin: 10px;
+  padding: $padding-md;
+  margin: $margin-md;
   box-shadow: 5px 5px #dbdbdb;
   border-radius: $border-radius;
 }
 
 //text styling
-.header{
-  text-decoration: underline;
+.title{
+  // text-decoration: underline;
   color: $title-color;
-  font-family: $primary-font;
+  font-family: $accent-font;
+  padding: $padding-md;
 }
 
+.body{
+  text-align: left;
+  padding: $padding-md;
+  margin: $margin-md;
+  font-family: $body-font;
+}
+
+//hero styling
 .hero{
-  width:100%;
+  width: 100%;
   position: absolute;
   margin: 0;
   padding: 0;

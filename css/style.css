@@ -34,7 +34,7 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 
 .container {
   width: 100%;
-  padding: 0.5em;
+  padding: 10px;
   border: solid red 4px; }
 
 .flex-area {
@@ -45,7 +45,7 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  padding: 0.5em;
+  padding: 10px;
   border: solid blue 4px; }
 
 :root {
@@ -70,19 +70,11 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   width: calc(var(--fullWidth)*(1/6)); }
 
 @media only screen and (max-width: 420px) {
-  .expand-sm {
+  .expand-all-children-sm [class^="spread-"], .expand-all-children-sm [class*=" spread-"] {
     width: 100%; } }
 
 @media only screen and (max-width: 768px) {
-  .expand-md {
-    width: 100%; } }
-
-@media only screen and (max-width: 420px) {
-  .expand-all-children-sm div[class^="spread-"], .expand-all-children-sm div[class*=" spread-"] {
-    width: 100%; } }
-
-@media only screen and (max-width: 768px) {
-  .expand-all-children-md div[class^="spread-"], .expand-all-children-md div[class*=" spread-"] {
+  .expand-all-children-md [class^="spread-"], .expand-all-children-md [class*=" spread-"] {
     width: 100%; } }
 
 .red-fill {
@@ -114,15 +106,21 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   max-width: 500px;
   border: 1px solid #bdbdbd;
   padding: 10px;
-  margin: 10px;
+  margin: 8px;
   -webkit-box-shadow: 5px 5px #dbdbdb;
   box-shadow: 5px 5px #dbdbdb;
   border-radius: 2px; }
 
-.header {
-  text-decoration: underline;
+.title {
   color: grey;
-  font-family: "Days One", Arial; }
+  font-family: "Federo", sans-serif;
+  padding: 10px; }
+
+.body {
+  text-align: left;
+  padding: 10px;
+  margin: 8px;
+  font-family: "David Libre", cursive; }
 
 .hero {
   width: 100%;
