@@ -33,6 +33,7 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
     --fontBaseSize: 14px; } }
 
 .container {
+  margin: 0;
   width: 100%;
   padding: 0; }
 
@@ -40,11 +41,14 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  padding: 5px; }
+  margin-top: 8px;
+  margin-top: 8px; }
 
 :root {
   --fullWidth: 93%; }
@@ -153,7 +157,7 @@ hr.divider-vertical {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 98%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;

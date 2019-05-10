@@ -106,6 +106,7 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 
 //container classes
 .container{
+  margin: 0;
   width: 100%;
   padding: 0;
   // border: solid red 4px;
@@ -113,8 +114,11 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 
 .flex-area{
   display: flex;
+  padding-top: $padding-md;
+  padding-bottom: $padding-md;
   flex-flow: row wrap;
-  padding: $padding-sm;
+  margin-top: $margin-md;
+  margin-top: $margin-md;
   // border: solid blue 4px;
 }
 
@@ -305,7 +309,7 @@ hr.divider-vertical{
 
 .nav { 
   display: flex;
-  width: 100%;
+  width: 98%;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
@@ -344,172 +348,20 @@ hr.divider-vertical{
 }
 
 
+// //------ non-framework code -------
 
-
-
-// header,
-// picture,
-// aside,
-// article,
-// nav,
-// footer {
-//   background: approach-half-neutral($background-color-primary); 
-//   padding: 1em;
-//   border-radius: 0.2em;
+// //credit to W3 (https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text)
+// .overlay-container {
+//   position: relative;
+//   text-align: center;
+//   color: white;
 // }
 
-// nav{
-//   background-color: hsla(200, 19%, 85%, 1.0);
-//   padding: 0;
-// } 
-
-// header, nav, footer, picture {
-//   grid-column: 1 / 4;
+// .centered-overlay-text {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
 // }
-
-// a {
-//   text-decoration: none;
-//   &.selected-link{
-//     color: approach-half-neutral($accent-color);
-//   }
-// }
-
-// /*styles for main page and sub-pages*/
-// .grid-landing-page {
-//   @include grid-setup;
-//   grid-template-columns: 150px auto 150px;
-//   grid-template-rows: 100px 60px auto 200px 50px;
-// }
-
-// .grid-sub-page {  
-//   @include grid-setup;
-//   grid-template-columns: auto 150px;
-//   grid-template-rows: 100px 50px 300px 50px;
-//   picture{
-//       grid-column: 1 / 2;
-//   }
-//   article{
-//     flex-direction: column;
-//   }
-//   article.grid-text {
-//       h3{
-//         font-family: $accent-font;
-//         color: approach-half-neutral($accent-color);
-//       }
-//       grid-column: 2 / 4;
-//   }
-// }
-
-// %grid-sub-container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-// header {
-//   @extend %grid-sub-container;
-//   h3 a {
-//     display:flex;
-//     color: $text-color-primary;
-//     font-family: $primary-font;
-//   }
-// }
-
-// .grid-text {
-//   @extend %grid-sub-container;
-//   p{
-//     color: $text-color-primary;
-//     font-family: $body-font;
-//   }
-//   padding: var(--textPadding, 30px);
-// }
-
-// picture {
-//   @extend %grid-sub-container;
-//   flex-flow: row wrap;
-//   &.img-large img{
-//     max-width:100%;
-//     height: 230px;
-//     padding: var(--imagePadding, 10px);
-//   }
-// }
-
-// .nav-text { 
-//   @extend %grid-sub-container;
-//   justify-content: space-between;
-//   list-style-type: none;
-//   padding: 0px 80px 15px 80px;
-// }
-
-// .nav-text a {   
-//   padding-right: 30px;
-//   font-family: $secondary-font;
-//   font-size: 26px;
-//   background-color: approach-half-neutral($button-color);
-//   padding: 5px;
-//   border-radius:5px;
-//     &:link{
-//       color: approach-half-neutral($background-color-primary);
-//     }
-//     &:hover{
-//       color: approach-half-neutral($accent-color);
-//     }
-//     &:visited{
-//       color: approach-half-neutral($background-color-primary);
-//     }
-// }
-
-// footer p {
-//   font-family: $accent-font;
-// }
-
-
-// //mobile
-// @media screen and (max-width: 680px){   //assignment 2: medoia query by type, "screen"
-
-//   /* sets scales and padding for mobile; calcultions occur in class declaration*/
-//   body{
-//     --mobileScaleIndex: 0.5; //assignment 2: sets local scale for padding;
-//     --fontBaseSize: 16px; // assignment 2: sets base of scaling font sizes for mobile
-//     --bodyMaxWidth: 40em; //assignment 2: media query with custom variable
-//     --bodyPadding: 0em;  //assignment 2: media query with custom variable
-//   }
-
-//   .grid-landing-page{
-//     @include grid-setup(.5em);
-//     grid-template-columns: 0px auto;
-//     grid-template-rows: 100px 40px auto 200px 0px;
-//     picture.img-large img{
-//       padding: calc(var(--imagePadding) * var(--mobileScaleIndex)); //assignment 2: recalculate based on local mobile scaling index
-//       width: auto;
-//     }
-//   }
-
-//   .grid-sub-page{
-//     @include grid-setup(.5em);
-//     grid-template-columns: 0 auto;
-//     grid-template-rows: 100px 40px 300px 50px;
-//     .grid-text {
-//       padding: calc(var(--textPadding) * var(--mobileScaleIndex)); //assignment 2: recalculate based on local mobile scaling index
-//     }
-//   }
-//   .nav-text {
-//     padding: 5px;
-//     margin: 5px;
-//     a {
-//       font-size: 22px;
-//     }
-//   }
-
-//   /* if mobile is long enough, style the footer to be detached */
-//   @media screen and (min-height: 500px){
-//     .grid-landing-page footer {
-//       margin: 30px;
-//     }
-//   }
-
-// }
-
-
 
 
