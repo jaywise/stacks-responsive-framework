@@ -1,3 +1,46 @@
+//Global variables
 
+//colors
+$text-color-primary: hsla(111, 30%, 21%, 1);
+$text-color-secondary: hsla(30, 96%, 52%, 1.0);
+$background-color-primary: #eaeaea;
+$background-color-secondary: lightblue;
+$accent-color: hsla(30, 96%, 52%, 1.0);
+$button-color: orange;
+$alert-color: red;
 
+//fonts
+$primary-font: 'Days One', Arial;
+$secondary-font: 'ZCOOL QingKe HuangYou', sans-serif;
+$accent-font: 'Federo', sans-serif;
+$body-font: 'David Libre', cursive;
+$title-color: grey;
+$body-color: black;
 
+//breakpoints
+$breakpoint-sm: 420px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1400px;
+
+//padding and margins
+$padding-sm: 5px;
+$padding-md: 10px;
+$padding-lg: 20px;
+
+$margin-sm: 2px;
+$margin-md: 8px;
+$margin-lg: 15px;
+
+//button variables
+$button-height: 60px;
+$button-width: 200px;
+
+//re-sizing text variables
+$sm-proportion: 0.7;
+$med-proportion: 0.85;
+$lg-proportion: 1;
+$xl-proportion: 1.15;
+
+//border styling
+$border-radius: 4px;
