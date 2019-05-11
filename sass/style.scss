@@ -1,21 +1,23 @@
 
+//-------Stacks import-------
 @import "stacks/_variables"; //grabs global variables here
 @import "stacks/_custom"; //grabs Stacks classes here
 
+//------font import----------
 @import url('https://fonts.googleapis.com/css?family=David+Libre|Federo|Days+One|ZCOOL+QingKe+HuangYou');
 
-
+//------non-Stacks global variables----------
 $dark-panel: #CCBAE8;
 $light-panel: #DED9FF;
 
-// header *{
-//   text-align: center;
-// }
+//-------overwriting stacks custom variables ------------
 
 //adjusts sizing of imported, overly large JS class modifier for code snippets
 code{
   --fontBaseSize: 16px;
 }
+
+//-------overwriting stacks classes ------------
 
 %panel{
   margin-top: 4px;
