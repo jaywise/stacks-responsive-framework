@@ -151,13 +151,14 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 //button styling
 
 %button{
+  font-size: 26px;
   max-width: $button-width;
   height: $button-height;
   border-radius: $border-radius;
   font-family: $secondary-font;
   font-size: var(--fontBaseSize);
   box-shadow: 3px 3px 54px 0px rgba(199,99,199,1);
-  color: $body-color;
+  color: $title-color;
   // @media only screen and (max-width: $breakpoint-sm){
   //   height: calc($button-height * $sm-proportion);
   //   font-size: calc(var(--fontBaseSize) * $sm-proportion);
@@ -271,7 +272,8 @@ hr.divider-vertical{
   // border-radius: $border-radius;
 }
 
-.nav a {   
+.nav a {
+  text-decoration: none;
   padding-right: 30px;
   font-family: $secondary-font;
   font-size: 26px;
@@ -279,13 +281,13 @@ hr.divider-vertical{
   border-radius:5px;
   color: $title-color;
     &:link{
-      color: $background-color-primary;
+      color: $title-color;
     }
     &:hover{
       text-decoration: underline;
     }
-    &:visited{
-      color: $background-color-primary;
+    &.active{
+      color: black;
     }
 }
 

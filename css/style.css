@@ -100,6 +100,7 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   align-items: center; }
 
 .button-default, .button-secondary, .button-danger {
+  font-size: 26px;
   max-width: 200px;
   height: 60px;
   border-radius: 4px;
@@ -107,7 +108,7 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   font-size: var(--fontBaseSize);
   -webkit-box-shadow: 3px 3px 54px 0px #c763c7;
   box-shadow: 3px 3px 54px 0px #c763c7;
-  color: black; }
+  color: grey; }
 
 .button-default {
   background-color: #EFCCFF; }
@@ -179,6 +180,7 @@ hr.divider-vertical {
   margin-right: 0; }
 
 .nav a {
+  text-decoration: none;
   padding-right: 30px;
   font-family: "ZCOOL QingKe HuangYou", sans-serif;
   font-size: 26px;
@@ -186,11 +188,11 @@ hr.divider-vertical {
   border-radius: 5px;
   color: grey; }
   .nav a:link {
-    color: #eaeaea; }
+    color: grey; }
   .nav a:hover {
     text-decoration: underline; }
-  .nav a:visited {
-    color: #eaeaea; }
+  .nav a.active {
+    color: black; }
 
 @media screen and (max-width: 420px) {
   .nav {
@@ -210,3 +212,9 @@ hr.divider-vertical {
     font-family: "David Libre", cursive;
     padding: 5px;
     text-align: center; }
+
+header * {
+  text-align: center; }
+
+body {
+  text-align: center; }
