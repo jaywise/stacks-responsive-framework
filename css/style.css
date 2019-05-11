@@ -212,10 +212,15 @@ hr.divider-vertical {
 code {
   --fontBaseSize: 16px; }
 
+body {
+  background-image: url("http://crossbones.org.uk/wp-content/uploads/2016/08/grey-background.jpg"); }
+
 .dark-color-panel, .light-color-panel {
   margin-top: 4px;
   margin-bottom: 4px;
-  padding-left: 5px; }
+  padding-left: 5px;
+  -webkit-box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24); }
 
 .dark-color-panel {
   background-color: #CCBAE8;
@@ -235,5 +240,10 @@ code {
 
 .inset-example {
   padding: 20px;
-  -webkit-box-shadow: inset 0px 4px 25px 5px rgba(0, 0, 0, 0.62);
-  box-shadow: inset 0px 4px 25px 5px rgba(0, 0, 0, 0.62); }
+  -webkit-box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24);
+  background-color: white; }
+
+.nav, footer {
+  -webkit-box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24); }

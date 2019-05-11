@@ -21,6 +21,7 @@ code{
 
 body{
   // background-image: url("https://frontrangevitalsigns.com/wp-content/uploads/2015/09/hy_1.png")
+  background-image: url("http://crossbones.org.uk/wp-content/uploads/2016/08/grey-background.jpg");
   // background-color: $background-color-primary;
 }
 
@@ -28,6 +29,8 @@ body{
   margin-top: 4px;
   margin-bottom: 4px;
   padding-left: 5px;
+  box-shadow: inset 1px 0px 14px 4px rgba(0,0,0,0.24);
+
 }
 
 .dark-color-panel{
@@ -53,7 +56,13 @@ body{
 
 .inset-example{
   padding: $padding-lg;
-  box-shadow: inset 0px 4px 25px 5px rgba(0,0,0,0.62);
+  box-shadow: inset 1px 0px 14px 4px rgba(0,0,0,0.24);
+  background-color: white;
+
+}
+
+.nav, footer{
+  box-shadow: inset 1px 0px 14px 4px rgba(0,0,0,0.24);
 
 }
 
