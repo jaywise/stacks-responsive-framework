@@ -1,9 +1,0 @@
-//brings color closer to half-neutral
-@function approach-half-neutral($color, $base: grey){ //assignment: above and beyond; assignment: use of two sass functions;
-  @if saturation($color)>saturation($base){
-      @return desaturate($color, 20%)
-  }
-  @else {
-      @return saturate($color, 20%)
-  }
-}
