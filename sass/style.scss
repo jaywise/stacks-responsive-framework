@@ -20,7 +20,8 @@ code{
 //-------overwriting stacks classes ------------
 
 body{
-  background-color: $background-color-primary;
+  // background-image: url("https://frontrangevitalsigns.com/wp-content/uploads/2015/09/hy_1.png")
+  // background-color: $background-color-primary;
 }
 
 %panel{
@@ -49,5 +50,17 @@ body{
   text-align: center;
   font-family: $body-font;
 }
+
+.inset-example{
+  padding: $padding-lg;
+  box-shadow: inset 0px 4px 25px 5px rgba(0,0,0,0.62);
+
+}
+
+// .header * {
+//   color: white;
+// }
+
+
 
 

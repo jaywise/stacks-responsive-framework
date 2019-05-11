@@ -1,8 +1,6 @@
 //Global variables
 
-//colors
-$text-color-primary: #BAC0E8;
-$text-color-secondary: #CCBAE8;
+//background colors
 $background-color-primary: #eaeaea;
 $background-color-secondary: #CCE0FF;
 $accent-color: hsla(30, 96%, 52%, 1.0);
@@ -14,8 +12,11 @@ $primary-font: 'Days One', Arial;
 $secondary-font: 'ZCOOL QingKe HuangYou', sans-serif;
 $accent-font: 'Federo', sans-serif;
 $body-font: 'David Libre', cursive;
+
+//text colors
 $title-color: grey;
 $body-color: black;
+$text-color-secondary: #CCBAE8;
 
 //breakpoints
 $breakpoint-sm: 420px;

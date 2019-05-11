@@ -212,9 +212,6 @@ hr.divider-vertical {
 code {
   --fontBaseSize: 16px; }
 
-body {
-  background-color: #eaeaea; }
-
 .dark-color-panel, .light-color-panel {
   margin-top: 4px;
   margin-bottom: 4px;
@@ -235,3 +232,8 @@ body {
   padding: 1em;
   text-align: center;
   font-family: "David Libre", cursive; }
+
+.inset-example {
+  padding: 20px;
+  -webkit-box-shadow: inset 0px 4px 25px 5px rgba(0, 0, 0, 0.62);
+  box-shadow: inset 0px 4px 25px 5px rgba(0, 0, 0, 0.62); }
