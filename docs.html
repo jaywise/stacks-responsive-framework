@@ -106,12 +106,40 @@
 					<article> 
 						<h5 class="body h5-scale">Container</h5>
 						<p class="body p-scale">
-							To get started, you'll need to have Sass running. You can download those files <a>here</a>. Then, download the Stack framework <a>here</a>. Open Sass in a code editor and place the Stack files within the Sass folder. 
+							The 
+							<code class="language-css p-scale">.container</code>
+							class will center and flex your other elements. Make this the outer element in your HTML. 
 						</p>
 					</article>
 				</div>	
 				<picture class="spread-2 center">
-					<img class="img-full" src="images/directory.png">
+					<img class="img-lg" src="images/container.png">
+				</picture>
+			</article>
+
+			<article class="flex-area expand-all-children-md">
+
+				<header class="title h3-scale center spread-1"></header>
+				<div class="spread-3 center">
+					<hr class="divider-vertical"></hr>
+					<article> 
+						<h5 class="body h5-scale">Flex area</h5>
+						<p class="body p-scale">
+							The 
+							<code class="language-css p-scale">
+							.flex-area</code>
+							class nests inside the 
+							<code class="language-css p-scale">.container</code>
+							class. It provides a flex property and formatting that allows for mobile reponsiveness. It can be combined with the 
+							<code class="language-css p-scale">.expand-all-children-md</code>
+							or
+							<code class="language-css p-scale">.expand-all-children-sm</code>
+							class to bring smaller elements to 100% width, depending on the breakpoint. 
+						</p>
+					</article>
+				</div>	
+				<picture class="spread-2 center">
+					<img class="img-lg" src="images/flexarea.png">
 				</picture>
 			</article>
 			<article class="flex-area expand-all-children-md">
@@ -119,44 +147,70 @@
 				<div class="spread-3 center">
 					<hr class="divider-vertical"></hr>
 					<article> 
-						<h5 class="body h5-scale">Hook it up</h5>
+						<h5 class="body h5-scale">Spread</h5>
 						<p class="body p-scale">
-							In your 
-							<code class="language-css p-scale">
-							style.scss</code>
-							file, add the following import statements at the top of the document:
-							<code class="language-css p-scale">@import "stacks/_variables";</code>
-							<code class="language-css p-scale">@import "stacks/_custom";</code>
-							Anything you write below these two statements will overwrite the Stacks classes. 
+							When building in Stacks,the bricks we stack up are all within the <i>spread</i> class. select between 1 and 6 columns which your spread will occupy. This is ideally combined with the 
+							<code class="language-css p-scale">.container</code>
+							,
+							<code class="language-css p-scale">.flex-area</code>
+							, and 
+							<code class="language-css p-scale">.expand-all-children-</code>
+							classes in a nesting pattern in order to optimize responsiveness across devices. Examples below:
 						</p>
 					</article>
 				</div>	
 				<picture class="spread-2 center">
-					<img class="img-lg" src="images/import.png">
+					<img class="img-full" src="images/nested-grid.png">
 				</picture>
 			</article>
-			<article class="flex-area expand-all-children-md">
-				<header class="title h3-scale center spread-1"></header>
-				<div class="spread-5 center">
-					<hr class="divider-vertical"></hr>
-					<article> 
-						<h5 class="body h5-scale">Know where to find things</h5>
-						<p class="body p-scale">
-							To access global variables, go to 
-							<code class="language-css p-scale">
-							_variables.scss</code>
-							Any modifications will directly compile to  
-							<code class="language-css p-scale">style.scss</code>. The 
-							<code class="language-css p-scale">_custom.scss</code>
-							file is annotated with class types, intended for you to split up into partials as desired. 
-						</p>
-						<img class="img-full" src="images/find_things_import.png">
-					</article>
-				</div>	
-				<picture class="spread-2 center">
+			<article class="container grid-example">
+				<div class="flex-area expand-all-children-md">
+					<div class="spread-2">
+						<p class="p-scale">.spread-2</p>
+					</div>
+						<div class="spread-2">
+						<p class="p-scale">.spread-2</p>
+					</div>
+					<div class="spread-2">
+						<p class="p-scale">.spread-2</p>
+					</div>
+				</div>
+			</article>
+			<article class="container grid-example">
+				<div class="flex-area expand-all-children-md">
+					<div class="spread-1">
+						<p class="p-scale">.spread-1</p>
+					</div>
+						<div class="spread-2">
+						<p class="p-scale">.spread-2</p>
+					</div>
+					<div class="spread-1">
+						<p class="p-scale">.spread-1</p>
+					</div>
+					<div class="spread-2">
+						<p class="p-scale">.spread-2</p>
+					</div>
+				</div>
+			</article>
+			<article class="container grid-example">
+				<div class="flex-area expand-all-children-md">
+					<div class="spread-5">
+						<p class="p-scale">.spread-5</p>
+					</div>
+					<div class="spread-1">
+						<p class="p-scale">.spread-1</p>
+					</div>
+				</div>
+			</article>
+			<article class="container grid-example">
+				<div class="flex-area expand-all-children-md">
+					<div class="spread-6">
+						<p class="p-scale">.spread-6</p>
+					</div>
+				</div>
+			</article>
 
-				</picture>
-			</article>
+
 		</section>
 		<footer class="footer p-scale">
 			<p>Josh Weiss 2019. Source code <a>here</a>. Built with <a>Stacks<a></p>

@@ -19,6 +19,10 @@ code{
 
 //-------overwriting stacks classes ------------
 
+body{
+  background-color: $background-color-primary;
+}
+
 %panel{
   margin-top: 4px;
   margin-bottom: 4px;
@@ -37,6 +41,13 @@ code{
   background-color: $light-panel;
   border: solid $light-panel 1px;
   border-radius: $border-radius;
+}
+
+.grid-example p{
+  border: solid grey 1px;
+  padding: 1em;
+  text-align: center;
+  font-family: $body-font;
 }
 
 

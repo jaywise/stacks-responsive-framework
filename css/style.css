@@ -212,6 +212,9 @@ hr.divider-vertical {
 code {
   --fontBaseSize: 16px; }
 
+body {
+  background-color: #eaeaea; }
+
 .dark-color-panel, .light-color-panel {
   margin-top: 4px;
   margin-bottom: 4px;
@@ -226,3 +229,9 @@ code {
   background-color: #DED9FF;
   border: solid #DED9FF 1px;
   border-radius: 4px; }
+
+.grid-example p {
+  border: solid grey 1px;
+  padding: 1em;
+  text-align: center;
+  font-family: "David Libre", cursive; }
