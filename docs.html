@@ -317,31 +317,45 @@
 		</section>
 		<section class="container dark-color-panel">
 			<article class="flex-area expand-all-children-md">
-				<header class="title h3-scale center spread-1">Navigation</header>
-				<div class="spread-3 center">
+				<header class="title h3-scale center spread-1">Images</header>
+				<div class="spread-5 center">
 					<hr class="divider-vertical"></hr>
 					<article> 
-						<h5 class="body h5-scale">Nav bar</h5>
+						<h5 class="body h5-scale">Sizing</h5>
 						<p class="body p-scale">
-							The nav bar is stripped down to its barest elements -- area and text. Declare the  
-							<code class="language-css p-scale">.nav</code>
-							class on the parent element, ideally with a responsive container like
-							<code class="language-css p-scale">.spread-6</code>
-							. Then add nav text inside of 
-							<code class="language-css p-scale">a</code>
-							tags. 
+							Images can leverage four responsive classes. 
+							<code class="language-css p-scale">.img-full</code>
+							expands to fill the maximum image size possible according to the parent container. 
+							<code class="language-css p-scale">.img-lg</code>
+							, 
+							<code class="language-css p-scale">.img-md</code>
+							, and 
+							<code class="language-css p-scale">.img-sm</code>
+							start out at 500px, 300px, and 150px, respectively. All sizes scale down at the point of clipping. 
 						</p>
 					</article>
 				</div>	
-				<picture class="spread-2 center">
-					<img class="img-full" src="images/nav_bar_code2.png">
-				</picture>
 			</article>
 			<article class="flex-area expand-all-children-md">
-				<div class="spread-1">
-				</div>
-				<picture class="spread-5 center">
-					<img class="img-full" src="images/nav_screenshot2.png">
+
+				<picture class="spread-6 center">
+					<img class="img-full" src="images/img-class2.png">
+					<h3 class="body"> .img-full</h3>
+				</picture>
+
+				<picture class="spread-6 center">
+					<img class="img-lg" src="images/img-class2.png">
+					<h3 class="body"> .img-lg</h3>
+				</picture>
+
+				<picture class="spread-6 center">
+					<img class="img-md" src="images/img-class2.png">
+					<h3 class="body"> .img-md</h3>					
+				</picture>
+
+				<picture class="spread-6 center">
+					<img class="img-sm" src="images/img-class2.png">
+					<h3 class="body"> .img-sm</h3>
 				</picture>
 
 			</article>
