@@ -5,11 +5,36 @@
 @import url('https://fonts.googleapis.com/css?family=David+Libre|Federo|Days+One|ZCOOL+QingKe+HuangYou');
 
 
-header *{
-  text-align: center;
+$dark-panel: #CCBAE8;
+$light-panel: #DED9FF;
+
+// header *{
+//   text-align: center;
+// }
+
+//adjusts sizing of imported, overly large JS class modifier for code snippets
+code{
+  --fontBaseSize: 16px;
 }
 
-body {
-  text-align: center;
+%panel{
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 5px;
 }
+
+.dark-color-panel{
+  @extend %panel;
+  background-color: $dark-panel;
+  border: solid $dark-panel 1px;
+  border-radius: $border-radius;
+}
+
+.light-color-panel{
+  @extend %panel;
+  background-color: $light-panel;
+  border: solid $light-panel 1px;
+  border-radius: $border-radius;
+}
+
 

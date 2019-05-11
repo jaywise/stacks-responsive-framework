@@ -106,8 +106,6 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   border-radius: 4px;
   font-family: "ZCOOL QingKe HuangYou", sans-serif;
   font-size: var(--fontBaseSize);
-  -webkit-box-shadow: 3px 3px 54px 0px #c763c7;
-  box-shadow: 3px 3px 54px 0px #c763c7;
   color: grey; }
 
 .button-default {
@@ -121,12 +119,10 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 
 .img-full, .img-lg, .img-md, .img-sm {
   border: 1px solid #bdbdbd;
-  padding: 10px;
   margin: 8px;
-  -webkit-box-shadow: 5px 5px #dbdbdb;
-  box-shadow: 5px 5px #dbdbdb;
-  border-radius: 4px;
-  height: 100%; }
+  -webkit-box-shadow: 10px 10px 24px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 24px -16px rgba(0, 0, 0, 0.75);
+  border-radius: 4px; }
 
 .img-full {
   max-width: 100%; }
@@ -213,8 +209,20 @@ hr.divider-vertical {
     padding: 5px;
     text-align: center; }
 
-header * {
-  text-align: center; }
+code {
+  --fontBaseSize: 16px; }
 
-body {
-  text-align: center; }
+.dark-color-panel, .light-color-panel {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 5px; }
+
+.dark-color-panel {
+  background-color: #CCBAE8;
+  border: solid #CCBAE8 1px;
+  border-radius: 4px; }
+
+.light-color-panel {
+  background-color: #DED9FF;
+  border: solid #DED9FF 1px;
+  border-radius: 4px; }

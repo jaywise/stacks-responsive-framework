@@ -8,6 +8,8 @@
   <meta name="description" content="Stacks">
   <meta name="author" content="Josh Weiss">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/>
+
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -37,35 +39,72 @@
 			<a href="sample.html">Sample</a>
 			<a><button class="button-danger">Download</button></a>
 		</nav>
-		<section class="flex-area expand-all-children-md">
-			<header class="title h3-scale center spread-1">About</header>
-			<div class="spread-4 center">
-				<hr class="divider-vertical"></hr>
-				<article> 
-					<h5 class="body h5-scale">A framework that lets you be the builder</h5>
-					<p class="body p-scale">
-					Some frameworks are built out extensively. Not this one. Stack you code on up. Stack it tall and stack it wide. This code base won't get in the way. Download full framework <a>here</a>.
-					</p>
-				</article>
-			</div>	
-		</section>
-		<section class="flex-area expand-all-children-md">
-			<header class="title h3-scale center spread-1">Starting up</header>
-			<div class="spread-4 center">
-				<hr class="divider-vertical"></hr>
-				<article> 
-					<h5 class="body h5-scale">Trust but verify</h5>
-					<p class="body p-scale">
-					The best way to get up and running is to check out the docs <a>here</a>ß first. Are you into some heavy lifiting? Then download full framework <a>here</a>.
-					</p>
-				</article>
-			</div>	
+		<section class="container dark-color-panel">
+			<article class="flex-area expand-all-children-md">
+				<header class="title h3-scale center spread-1">First steps</header>
+				<div class="spread-3 center">
+					<hr class="divider-vertical"></hr>
+					<article> 
+						<h5 class="body h5-scale">Get the files</h5>
+						<p class="body p-scale">
+							To get started, you'll need to have Sass running. You can download those files <a>here</a>. Then, download the Stack framework <a>here</a>. Open Sass in a code editor and place the Stack files within the Sass folder. 
+						</p>
+					</article>
+				</div>	
+				<picture class="spread-2 center">
+					<img class="img-full" src="images/directory.png">
+				</picture>
+			</article>
+			<article class="flex-area expand-all-children-md">
+				<header class="title h3-scale center spread-1"></header>
+				<div class="spread-3 center">
+					<hr class="divider-vertical"></hr>
+					<article> 
+						<h5 class="body h5-scale">Hook it up</h5>
+						<p class="body p-scale">
+							In your 
+							<code class="language-css p-scale">
+							style.scss</code>
+							file, add the following import statements at the top of the document:
+							<code class="language-css p-scale">@import "stacks/_variables";</code>
+							<code class="language-css p-scale">@import "stacks/_custom";</code>
+							Anything you write below these two statements will overwrite the Stacks classes. 
+						</p>
+					</article>
+				</div>	
+				<picture class="spread-2 center">
+					<img class="img-lg" src="images/import.png">
+				</picture>
+			</article>
+			<article class="flex-area expand-all-children-md">
+				<header class="title h3-scale center spread-1"></header>
+				<div class="spread-3 center">
+					<hr class="divider-vertical"></hr>
+					<article> 
+						<h5 class="body h5-scale">Know where to find things</h5>
+						<p class="body p-scale">
+							To access global variables, go to 
+							<code class="language-css p-scale">
+							_variables.scss</code>
+							Any modifications will directly compile to  
+							<code class="language-css p-scale">style.scss</code>. The 
+							<code class="language-css p-scale">_custom.scss</code>
+							file is annotated with class types, intended for you to split up into partials as desired. 
+						</p>
+					</article>
+				</div>	
+				<picture class="spread-2 center">
+				</picture>
+			</article>
 		</section>
 		<footer class="footer p-scale">
 			<p>Josh Weiss 2019. Source code <a>here</a>. Built with <a>Stacks<a></p>
 		</footer>
 	</main>
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script> 	<!-- Injects syntax highlighting sytyles tied to <code> tag. Credit to Prism (https://cdnjs.com/libraries/prism) -->
   <script src="js/scripts.js"></script>
+
 </body>
 </html>

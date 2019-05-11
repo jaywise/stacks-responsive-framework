@@ -157,7 +157,7 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   border-radius: $border-radius;
   font-family: $secondary-font;
   font-size: var(--fontBaseSize);
-  box-shadow: 3px 3px 54px 0px rgba(199,99,199,1);
+  // box-shadow: 3px 3px 10px 0px rgba(199,99,199,1);
   color: $title-color;
   // @media only screen and (max-width: $breakpoint-sm){
   //   height: calc($button-height * $sm-proportion);
@@ -195,11 +195,11 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 //image styling
 %image{
   border: 1px solid #bdbdbd;
-  padding: $padding-md;
+  // padding: $padding-md;
   margin: $margin-md;
-  box-shadow: 5px 5px #dbdbdb;
+  box-shadow: 10px 10px 24px -16px rgba(0,0,0,0.75);
   border-radius: $border-radius;
-  height: 100%;
+  // height: 100%;
 }
 
 .img-full{
