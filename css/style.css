@@ -1,37 +1,9 @@
-/*type-scale for root (desktop)
-sets default (ie root), but can be overridden for mobile if fontScale is modified */
+/* 
+Copyright Josh Weiss 2019
+Stacks Responsive Framework
+Docs at https://github.com/jaywise/stacks-responsive-framework
+*/
 @import url("https://fonts.googleapis.com/css?family=David+Libre|Federo|Days+One|ZCOOL+QingKe+HuangYou");
-:root {
-  --fontBaseSize: 20px;
-  --fontScale: 1.25; }
-
-/* modular scaling based upon unit of fontScale variable*/
-.p-scale {
-  font-size: var(--fontBaseSize); }
-
-.h5-scale {
-  font-size: calc(var(--fontBaseSize) * var(--fontScale)); }
-
-.h4-scale {
-  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale)); }
-
-.h3-scale {
-  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale)); }
-
-.h2-scale {
-  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale)); }
-
-.h1-scale {
-  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale)); }
-
-@media only screen and (max-width: 768px) {
-  [class*="scale"] {
-    --fontBaseSize: 16px; } }
-
-@media only screen and (max-width: 420px) {
-  [class*="scale"] {
-    --fontBaseSize: 14px; } }
-
 body {
   max-width: 1100px;
   margin: 0 auto; }
@@ -83,44 +55,6 @@ body {
   .expand-all-children-md [class^="spread-"], .expand-all-children-md [class*=" spread-"] {
     width: 100%; } }
 
-.lightblue-fill {
-  background-color: lightblue; }
-
-.red-fill {
-  background-color: red; }
-
-.blue-fill {
-  background-color: blue; }
-
-.center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.button-default, .button-secondary, .button-danger {
-  font-size: 26px;
-  max-width: 200px;
-  height: 60px;
-  border-radius: 4px;
-  font-family: "ZCOOL QingKe HuangYou", sans-serif;
-  font-size: var(--fontBaseSize);
-  color: grey; }
-
-.button-default {
-  background-color: #EFCCFF; }
-
-.button-secondary {
-  background-color: #CCE0FF; }
-
-.button-danger {
-  background-color: #EFCCFF; }
-
 .img-full, .img-lg, .img-md, .img-sm {
   border: 1px solid #bdbdbd;
   margin: 8px;
@@ -140,6 +74,36 @@ body {
 .img-sm {
   max-width: 150px; }
 
+:root {
+  --fontBaseSize: 20px;
+  --fontScale: 1.25; }
+
+.p-scale {
+  font-size: var(--fontBaseSize); }
+
+.h5-scale {
+  font-size: calc(var(--fontBaseSize) * var(--fontScale)); }
+
+.h4-scale {
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale)); }
+
+.h3-scale {
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale)); }
+
+.h2-scale {
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale)); }
+
+.h1-scale {
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale)); }
+
+@media only screen and (max-width: 768px) {
+  [class*="scale"] {
+    --fontBaseSize: 16px; } }
+
+@media only screen and (max-width: 420px) {
+  [class*="scale"] {
+    --fontBaseSize: 14px; } }
+
 .title {
   color: grey;
   font-family: "Federo", sans-serif;
@@ -150,12 +114,6 @@ body {
   padding: 10px;
   margin: 8px;
   font-family: "David Libre", cursive; }
-
-hr.divider-vertical {
-  float: left;
-  width: 0px;
-  height: 95%;
-  opacity: .5; }
 
 .nav {
   display: -webkit-box;
@@ -178,7 +136,9 @@ hr.divider-vertical {
   border-radius: 4px;
   margin-top: 8px;
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  -webkit-box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24); }
 
 .nav a {
   text-decoration: none;
@@ -203,40 +163,31 @@ hr.divider-vertical {
     .nav a {
       font-size: 22px; } }
 
-.footer {
-  width: 100%;
-  height: 50px;
-  background-color: #CCE0FF;
-  border: 1px solid #CCE0FF;
-  border-radius: 4px;
-  padding-bottom: 5px; }
-  .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer p {
-    font-family: "David Libre", cursive;
-    padding: 5px;
-    text-align: center; }
-
 code {
   --fontBaseSize: 16px; }
 
 body {
   background-color: #FEFFF1; }
 
-.dark-color-panel, .light-color-panel {
+.default-color-panel, .dark-color-panel, .light-color-panel {
   margin-top: 4px;
   margin-bottom: 4px;
   padding-left: 5px;
   -webkit-box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24);
-  box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24); }
+  box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 4px; }
+
+.default-color-panel {
+  background-color: white;
+  border: solid white 1px; }
 
 .dark-color-panel {
   background-color: #CCBAE8;
-  border: solid #CCBAE8 1px;
-  border-radius: 4px; }
+  border: solid #CCBAE8 1px; }
 
 .light-color-panel {
   background-color: #DED9FF;
-  border: solid #DED9FF 1px;
-  border-radius: 4px; }
+  border: solid #DED9FF 1px; }
 
 .grid-example p {
   border: solid grey 1px;
@@ -250,6 +201,53 @@ body {
   box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24);
   background-color: white; }
 
-.nav, footer {
+footer {
   -webkit-box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24);
   box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24); }
+
+.button-default, .button-secondary, .button-danger {
+  font-size: 26px;
+  max-width: 200px;
+  height: 60px;
+  border-radius: 4px;
+  font-family: "ZCOOL QingKe HuangYou", sans-serif;
+  font-size: var(--fontBaseSize);
+  color: grey; }
+
+.button-default {
+  background-color: #EFCCFF; }
+
+.button-secondary {
+  background-color: #CCE0FF; }
+
+.button-danger {
+  background-color: #EFCCFF; }
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: #CCE0FF;
+  border: 1px solid #CCE0FF;
+  border-radius: 4px;
+  padding-bottom: 5px; }
+  .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer p {
+    font-family: "David Libre", cursive;
+    padding: 5px;
+    text-align: center; }
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+hr.divider-vertical {
+  float: left;
+  width: 0px;
+  height: 95%;
+  opacity: .5; }
