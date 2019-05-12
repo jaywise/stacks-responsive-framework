@@ -194,26 +194,6 @@ code {
 body {
   background-color: #FEFFF1; }
 
-.default-color-panel, .dark-color-panel, .light-color-panel {
-  margin-top: 4px;
-  margin-bottom: 4px;
-  padding-left: 5px;
-  -webkit-box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24);
-  box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24);
-  border-radius: 4px; }
-
-.default-color-panel {
-  background-color: white;
-  border: solid white 1px; }
-
-.dark-color-panel {
-  background-color: #CCBAE8;
-  border: solid #CCBAE8 1px; }
-
-.light-color-panel {
-  background-color: #DED9FF;
-  border: solid #DED9FF 1px; }
-
 .grid-example p {
   border: solid grey 1px;
   padding: 1em;
