@@ -197,5 +197,32 @@ body{
   }
 }
 
+//-------- panel styling
+%panel{
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 5px;
+  box-shadow: inset 1px 0px 14px 4px rgba(0,0,0,0.24);
+  border-radius: $border-radius;
+}
+
+.default-color-panel{
+  @extend %panel;
+  background-color: $default-panel;
+  border: solid $default-panel 1px;
+}
+
+.dark-color-panel{
+  @extend %panel;
+  background-color: $dark-panel;
+  border: solid $dark-panel 1px;
+}
+
+.light-color-panel{
+  @extend %panel;
+  background-color: $light-panel;
+  border: solid $light-panel 1px;
+}
+
 
 
