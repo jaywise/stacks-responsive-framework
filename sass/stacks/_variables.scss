@@ -7,16 +7,16 @@ $accent-color: hsla(30, 96%, 52%, 1.0);
 $button-color: #EFCCFF;
 $alert-color: #EFCCFF;
 
+//text colors
+$title-color: grey;
+$body-color: black;
+$text-color-secondary: #CCBAE8;
+
 //fonts
 $primary-font: 'Days One', Arial;
 $secondary-font: 'ZCOOL QingKe HuangYou', sans-serif;
 $accent-font: 'Federo', sans-serif;
 $body-font: 'David Libre', cursive;
-
-//text colors
-$title-color: grey;
-$body-color: black;
-$text-color-secondary: #CCBAE8;
 
 //breakpoints
 $breakpoint-sm: 420px;
@@ -33,10 +33,6 @@ $margin-sm: 2px;
 $margin-md: 8px;
 $margin-lg: 15px;
 
-//button variables
-$button-height: 60px;
-$button-width: 200px;
-
 //re-sizing text variables
 $sm-proportion: 0.7;
 $med-proportion: 0.85;
@@ -45,3 +41,8 @@ $xl-proportion: 1.15;
 
 //border styling
 $border-radius: 4px;
+
+//panel styling
+$dark-panel: #CCBAE8;
+$light-panel: #DED9FF;
+$default-panel: white;

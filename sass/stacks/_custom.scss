@@ -18,13 +18,19 @@ body{
   padding: 0;
 }
 
+
+//sets padding for grid
+:root{
+  --flexBuffer: $padding-md;
+}
+
 .flex-area{
   display: flex;
-  padding-top: $padding-md;
-  padding-bottom: $padding-md;
   flex-flow: row wrap;
-  margin-top: $margin-md;
-  margin-top: $margin-md;
+  padding-top: var(--flexBuffer);
+  padding-bottom: var(--flexBuffer);
+  margin-top: calc(var(--flexBuffer) * 0.9;
+  margin-top: calc(var(--flexBuffer) * 0.9);
 }
 
 :root {
@@ -70,11 +76,9 @@ body{
 //------- image styling ----------
 %image{
   border: 1px solid #bdbdbd;
-  // padding: $padding-md;
   margin: $margin-md;
   box-shadow: 10px 10px 24px -16px rgba(0,0,0,0.75);
   border-radius: $border-radius;
-  // height: 100%;
 }
 .img-full{
   @extend %image;
@@ -135,7 +139,6 @@ body{
 }
 
 .title{
-  // text-decoration: underline;
   color: $title-color;
   font-family: $accent-font;
   padding: $padding-md;
@@ -191,7 +194,9 @@ body{
   .nav {
     padding: 5px;
     margin: 5px;
-    a {
+    a, button {
+      padding: 5px;
+      margin: 5px;
       font-size: 22px;
     }
   }

@@ -142,6 +142,24 @@
 			</article>
 			<article class="flex-area expand-all-children-md">
 				<header class="title h3-scale center spread-1"></header>
+				<div class="spread-5 center">
+					<hr class="divider-vertical"></hr>
+					<article> 
+						<h5 class="body h5-scale">Breakpoints</h5>
+						<p class="body p-scale">
+							Stacks comes with two default breakpoints. To change breakpoints, access the 
+							<code class="language-css p-scale">$breakpoint-md</code> 
+							and
+							<code class="language-css p-scale">$breakpoint-sm</code> 
+							variables in the 
+							<code class="language-css p-scale">_variables.scss</code> 
+							file.
+						</p>
+					</article>
+				</div>	
+			</article>
+			<article class="flex-area expand-all-children-md">
+				<header class="title h3-scale center spread-1"></header>
 				<div class="spread-3 center">
 					<hr class="divider-vertical"></hr>
 					<article> 
@@ -153,7 +171,7 @@
 							<code class="language-css p-scale">.flex-area</code>
 							, and 
 							<code class="language-css p-scale">.expand-all-children-</code>
-							classes in a nesting pattern in order to optimize responsiveness across devices. Examples below:
+							classes in a nesting pattern in order to optimize responsiveness across devices. Here are a few examples of how to combine the different <i>spread</i> classes:
 						</p>
 					</article>
 				</div>	
@@ -215,13 +233,13 @@
 				</div>
 			</article>
 		</section>
-		<section class="container light-color-panel">
+		<section class="container dark-color-panel">
 			<article class="flex-area expand-all-children-md">
 				<header class="title h3-scale center spread-1">Panels</header>
 				<div class="spread-3 center">
 					<hr class="divider-vertical"></hr>
 					<article> 
-						<h5 class="body h5-scale">Formatting</h5>
+						<h5 class="body h5-scale">Colors</h5>
 						<p class="body p-scale">
 							Panels nest within the grid to diferentiate areas of the screen. Stacks comes with three out-of-the-box options:   
 							<code class="language-css p-scale">.default-panel-color</code>
@@ -229,7 +247,15 @@
 							<code class="language-css p-scale">.light-panel-color</code>
 							, and 
 							<code class="language-css p-scale">.dark-panel-color</code>
-							. 
+							. Modify the color settings through the 
+							<code class="language-css p-scale">$default-panel</code>
+							, 
+							<code class="language-css p-scale">$light-panel</code>
+							, and 
+							<code class="language-css p-scale">$dark-panel</code>
+							 variables in the 
+							 <code class="language-css p-scale">_variables.scss</code>
+							 file.
 						</p>
 					</article>
 				</div>	
@@ -238,7 +264,7 @@
 				</picture>
 			</article>
 		</section>
-		<section class="container dark-color-panel">
+		<section class="container light-color-panel">
 			<article class="flex-area expand-all-children-md">
 				<header class="title h3-scale center spread-1">Text</header>
 				<div class="spread-3 center">
@@ -307,7 +333,7 @@
 				</picture>
 			</article>
 		</section>
-		<section class="container light-color-panel">
+		<section class="container dark-color-panel">
 			<article class="flex-area expand-all-children-md">
 				<header class="title h3-scale center spread-1">Navigation</header>
 				<div class="spread-3 center">
@@ -337,7 +363,7 @@
 				</picture>
 			</article>
 		</section>
-		<section class="container dark-color-panel">
+		<section class="container light-color-panel">
 			<article class="flex-area expand-all-children-md">
 				<header class="title h3-scale center spread-1">Images</header>
 				<div class="spread-5 center">

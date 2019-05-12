@@ -7,9 +7,10 @@
 @import url('https://fonts.googleapis.com/css?family=David+Libre|Federo|Days+One|ZCOOL+QingKe+HuangYou');
 
 //------non-Stacks global variables----------
-$dark-panel: #CCBAE8;
-$light-panel: #DED9FF;
-$default-panel: white;
+
+//button variables
+$button-height: 60px;
+$button-width: 200px;
 
 //-------overwriting stacks custom variables ------------
 
@@ -21,8 +22,6 @@ code{
 //-------overwriting stacks classes ------------
 
 body{
-  // background-image: url("https://frontrangevitalsigns.com/wp-content/uploads/2015/09/hy_1.png")
-  // background-image: url("http://crossbones.org.uk/wp-content/uploads/2016/08/grey-background.jpg");
   background-color: $background-color-primary;
 }
 

@@ -13,18 +13,21 @@ body {
   width: 100%;
   padding: 0; }
 
+:root {
+  --flexBuffer: $padding-md; }
+
 .flex-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  margin-top: 8px;
-  margin-top: 8px; }
+  padding-top: var(--flexBuffer);
+  padding-bottom: var(--flexBuffer);
+  margin-top: calc(var(--flexBuffer) * 0.9);
+  margin-top: calc(var(--flexBuffer) * 0.9); }
 
 :root {
   --fullWidth: 93%; }
@@ -160,8 +163,30 @@ body {
   .nav {
     padding: 5px;
     margin: 5px; }
-    .nav a {
+    .nav a, .nav button {
+      padding: 5px;
+      margin: 5px;
       font-size: 22px; } }
+
+.default-color-panel, .dark-color-panel, .light-color-panel {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 5px;
+  -webkit-box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 4px; }
+
+.default-color-panel {
+  background-color: white;
+  border: solid white 1px; }
+
+.dark-color-panel {
+  background-color: #CCBAE8;
+  border: solid #CCBAE8 1px; }
+
+.light-color-panel {
+  background-color: #DED9FF;
+  border: solid #DED9FF 1px; }
 
 code {
   --fontBaseSize: 16px; }
