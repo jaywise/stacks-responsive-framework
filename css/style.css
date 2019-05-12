@@ -32,6 +32,10 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
   [class*="scale"] {
     --fontBaseSize: 14px; } }
 
+body {
+  max-width: 1100px;
+  margin: 0 auto; }
+
 .container {
   margin: 0;
   width: 100%;
@@ -211,9 +215,6 @@ hr.divider-vertical {
 
 code {
   --fontBaseSize: 16px; }
-
-body {
-  background-image: url("http://crossbones.org.uk/wp-content/uploads/2016/08/grey-background.jpg"); }
 
 .dark-color-panel, .light-color-panel {
   margin-top: 4px;

@@ -49,6 +49,11 @@ sets default (ie root), but can be overridden for mobile if fontScale is modifie
 //     --imagePadding: 5px; //assignment 2: global variable to be re-calculated upon media query
 // }
 
+body{
+  max-width: 1100px; 
+  margin: 0 auto;
+}
+
 //container classes
 .container{
   margin: 0;
