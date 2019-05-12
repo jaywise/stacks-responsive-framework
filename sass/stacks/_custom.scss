@@ -262,19 +262,18 @@ hr.divider-vertical{
 
 .nav { 
   display: flex;
-  width: 99%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
   list-style-type: none;
-  padding: $padding-md;
+  padding-top: $padding-md;
+  padding-bottom: $padding-md;
   background-color: $background-color-secondary;
   border-radius: $border-radius;
-  margin-top: $margin-lg;
+  margin-top: $margin-md;
   margin-left: 0;
   margin-right: 0;
-  // border: 1px solid $text-color-primary;
-  // border-radius: $border-radius;
 }
 
 .nav a {
@@ -282,7 +281,8 @@ hr.divider-vertical{
   padding-right: 30px;
   font-family: $secondary-font;
   font-size: 26px;
-  padding: $padding-sm;
+  padding-left: $padding-lg;
+  padding-right: $padding-lg;
   border-radius:5px;
   color: $title-color;
     &:link{
