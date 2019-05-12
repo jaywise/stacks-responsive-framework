@@ -29,8 +29,8 @@ body{
   flex-flow: row wrap;
   padding-top: var(--flexBuffer);
   padding-bottom: var(--flexBuffer);
-  margin-top: calc(var(--flexBuffer) * 0.9;
-  margin-top: calc(var(--flexBuffer) * 0.9);
+  margin-top: calc(var(--flexBuffer) * 1.1;
+  margin-top: calc(var(--flexBuffer) * 1.1);
 }
 
 :root {
@@ -138,6 +138,8 @@ body{
   }
 }
 
+//boilerplate font and color styling
+
 .title{
   color: $title-color;
   font-family: $accent-font;
@@ -166,7 +168,7 @@ body{
   padding-bottom: $padding-md;
   background-color: $background-color-secondary;
   border-radius: $border-radius;
-  margin-top: $margin-md;
+  margin-top: $margin-lg;
   margin-left: 0;
   margin-right: 0;
   box-shadow: inset 1px 0px 14px 4px rgba(0,0,0,0.24);

@@ -26,8 +26,8 @@ body {
   flex-flow: row wrap;
   padding-top: var(--flexBuffer);
   padding-bottom: var(--flexBuffer);
-  margin-top: calc(var(--flexBuffer) * 0.9);
-  margin-top: calc(var(--flexBuffer) * 0.9); }
+  margin-top: calc(var(--flexBuffer) * 1.1);
+  margin-top: calc(var(--flexBuffer) * 1.1); }
 
 :root {
   --fullWidth: 93%; }
@@ -137,7 +137,7 @@ body {
   padding-bottom: 10px;
   background-color: #CCE0FF;
   border-radius: 4px;
-  margin-top: 8px;
+  margin-top: 15px;
   margin-left: 0;
   margin-right: 0;
   -webkit-box-shadow: inset 1px 0px 14px 4px rgba(0, 0, 0, 0.24);
